@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miCalculateTip"
+        android:title="Calculate Tip"
+        android:icon="@drawable/ic_tip_money"/>
+
+    <item
+        android:id="@+id/miSplitBill"
+        android:title="Split Bill"
+        android:icon="@drawable/ic_split_bill"/>
+</menu>

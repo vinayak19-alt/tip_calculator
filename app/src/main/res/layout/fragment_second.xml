@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvAmountBase"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Amount"
+        app:layout_constraintEnd_toEndOf="@+id/tvPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAmountBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="Total Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAmountBase"
+        app:layout_constraintStart_toEndOf="@+id/tvAmountBase"
+        app:layout_constraintTop_toTopOf="@+id/tvAmountBase"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/tvPeople"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="People"
+        app:layout_constraintEnd_toEndOf="@+id/tvPayment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountBase" />
+
+    <EditText
+        android:id="@+id/etPeopleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number of People"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
+        app:layout_constraintEnd_toEndOf="@+id/etAmountBase"
+        app:layout_constraintStart_toStartOf="@+id/etAmountBase"
+        app:layout_constraintTop_toTopOf="@+id/tvPeople" />
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeople" />
+
+    <TextView
+        android:id="@+id/tvFinalPayment"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+        app:layout_constraintEnd_toEndOf="@+id/etPeopleNumber"
+        app:layout_constraintStart_toStartOf="@+id/etPeopleNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvPayment"
+        tools:text="Final Amount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
